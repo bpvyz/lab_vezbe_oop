@@ -1,0 +1,32 @@
+Zadatak 3. Na programskom jeziku C++ kreirati klasu Buffer koja kao privatne članove sadrži:
+• kapaciteti bafera,
+• broj upisanih elemenata u bafer,
+• dinamički niz elemenata tipa integer koji predstavlja sam bafer.
+Klasa sadrži i javne članove:
+• konstruktor koji inicijalizuje kapacitet bafera,
+• destruktor,
+• virtuelnu funkciju push za dodavanje novog elementa na kraj bafera,
+• virtuelnu funkciju pop za izbacivanje elementa sa početka bafera.
+• Virtuelnu funkciju Clear koja izbacuje sve elemente iz bafera
+
+
+Iz klase Buffer izvesti klase QueueBuffer i OrderedBuffer.
+Funkcionalnosti za QueueBuffer treba da budu sledeće:
+- Funkcija push treba da doda element na prvo slobodno mesto u bafer.
+- Funkcija Clear funkcioniše kao i ona iz osnovne klase.
+- Funkcija pop treba da izbacuje pretposlednji element iz bafera. Ako bafer ima samo jedan
+element, onda treba da izbaci njega.
+
+Funkcionalnosti za OrderedBuffer treba da budu sledeće:
+- funkcija Clear treba da vrednosti svih elemenata postavi na 0.
+- Funkcija push treba da doda novi elemenat u bafer tako da sadržaj bafera ostane sortiran
+u rastućem redosledu.
+- Funkcija pop treba da izbaci elemenat iz sredine bafera.
+
+U funkciji main deklarisati tri pokazivača na klasu Buffer, a zatim dinamički kreirati objekte klase
+Buffer, QueueBuffer i PostponedStackBuffer i testirati sve funkcije članice, tako što ćete kroz
+2018 puta da ponovite sledeću sekvencu za svaki od objekata:
+- Tri puta pozovete push sa slučajno generisanim celi brojem
+- Dva puta pozovete pop
+- U svakom pedesetom ciklusu zovete Clear
+- Nakon svakog stotog ciklusa štampate sadržaj vaših bafera
